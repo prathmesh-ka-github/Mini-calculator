@@ -1,9 +1,22 @@
+@media (orientation = portrait) and (max-width: 700px) 
+{
+    body  {
+        font-size: 2.3vmax;
+    }
+}
+
+@media (orientation = landscape)
+{
+    body  {
+        font-size: 2vw;
+    }
+}
+
 body {
     margin: 0;
     background-color: #1c1c1c;
     color: #ccc;
     font-family: roboto,sans-serif;
-    font-size: 1.5vmax;
 }
 main {
     margin-top: 4vmax;
@@ -29,7 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
 }
 .input-container {
     display: flex;
@@ -39,7 +52,7 @@ main {
 .input-container input {
     all: unset;
     border-bottom: #ccc solid 1px;
-    width: 15vw;
+    width: 18vw;
     text-align: center;
 }
 .operation-container {
@@ -67,12 +80,6 @@ main {
 }
 #output {
     border-bottom: #39ff14 solid 1px;
-    width: 15vw;
+    width: 19vw;
     text-align: center;
-}
-@media (max-width:1000px)
-{
-    body  {
-        font-size: 2.3vmax;
-    }
 }
