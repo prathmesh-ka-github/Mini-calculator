@@ -6,7 +6,7 @@ body {
     font-size: 1.5vmax;
 }
 main {
-    margin-top: 6vmax;
+    margin-top: 4vmax;
     padding: 2vw;
     display: flex;
     align-content: center;
@@ -64,4 +64,10 @@ main {
 #output {
     border-bottom: #39ff14 solid 1px;
     width: 15vw;
+}
+@media (max-width:500px)
+{
+    .body  {
+        font-size: 6vmax;
+    }
 }
