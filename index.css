@@ -1,7 +1,7 @@
 @media (orientation = portrait) and (max-width: 700px) 
 {
     body  {
-        font-size: 2.3vmax;
+        font-size: 2.3vw;
     }
 }
 
