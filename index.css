@@ -65,7 +65,7 @@ main {
     border-bottom: #39ff14 solid 1px;
     width: 15vw;
 }
-@media (max-width:500px)
+@media (max-width:1000px)
 {
     body  {
         font-size: 2.3vmax;
