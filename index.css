@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #1c1c1c;
+    color: #ccc;
+    font-family: roboto,sans-serif;
+    font-size: 1.5vmax;
+}
+main {
+    margin-top: 6vmax;
+    padding: 2vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vmin;
+}
+.logo div {
+    font-size: 4vmax;
+    font-weight: 600;
+    color: #39ff14;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.inputt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8vw;
+}
+.input-container input {
+    all: unset;
+    border-bottom: #ccc solid 1px;
+    width: 15vw;
+}
+.operation-container {
+    display: flex;
+    flex-direction: column;
+}
+.operation-container div {
+    display: flex;
+    flex-direction: row;
+    padding: 0.3vw;
+}
+.operation-container div input {
+    width: 3vmax;
+    height: 3vmax;
+    margin-right: 1vmax;
+    border: solid 1px black;
+    background-color: #2b2a2a;
+}
+.output-con {
+    margin-top: 2vmax;
+    display: flex;
+}
+#output {
+    border-bottom: #39ff14 solid 1px;
+    width: 15vw;
+}
