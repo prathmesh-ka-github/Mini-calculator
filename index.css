@@ -40,6 +40,7 @@ main {
     all: unset;
     border-bottom: #ccc solid 1px;
     width: 15vw;
+    text-align: center;
 }
 .operation-container {
     display: flex;
@@ -57,6 +58,9 @@ main {
     border: solid 1px black;
     background-color: #2b2a2a;
 }
+.operation-container div input:hover {
+    background-color: #525252;
+}
 .output-con {
     margin-top: 2vmax;
     display: flex;
@@ -64,6 +68,7 @@ main {
 #output {
     border-bottom: #39ff14 solid 1px;
     width: 15vw;
+    text-align: center;
 }
 @media (max-width:1000px)
 {
