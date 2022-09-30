@@ -1,4 +1,10 @@
-@media (orientation = portrait) and (max-width: 920px) 
+
+
+
+/*
+    ! CSS for Mobile browsers
+*/
+@media (orientation=portrait) and (max-width: 920px) 
 {
     body  {
         font-size: 4.5vw;
@@ -10,8 +16,23 @@
         margin-top: 50px;
     }
 }
+@media (orientation=landscape) and (max-width: 500px)
+{
+    body  {
+        font-size: 4.5vw;
+    }
+    .logo div {
+        font-size: 8vmax;
+    }
+    main {
+        margin-top: 50px;
+    }
+}
 
-@media (orientation = landscape)
+/*
+    ! CSS for desktop browsers
+*/
+@media (orientation=landscape) and (min-width: 920px)
 {
     body  {
         font-size: 2vw;
@@ -26,8 +47,8 @@
 
 body {
     margin: 0;
-    background-color: #1c1c1c;
     color: #ccc;
+    background-color: #1c1c1c;
     font-family: roboto,sans-serif;
 }
 main {
