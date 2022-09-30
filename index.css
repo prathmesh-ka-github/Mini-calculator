@@ -10,7 +10,17 @@
         font-size: 8vw;
     }
     main {
-        margin-top: 50px;
+        margin-top: 70px;
+    }
+    .inputt {
+        width: 80vw;
+        font-size: 5.5vw;
+    }
+    .inputt input {
+        margin-bottom: 4vw;
+    }
+    .logo {
+        margin-bottom: 7vw;
     }
 }
 @media (orientation=landscape) and (max-width: 500px)
@@ -22,7 +32,17 @@
         font-size: 8vmax;
     }
     main {
-        margin-top: 50px;
+        margin-top: 70px;
+    }
+    .inputt {
+        width: 80vw;
+        font-size: 5.5vw;
+    }
+    .inputt input {
+        margin-bottom: 4vw;
+    }
+    .logo {
+        margin-bottom: 7vw;
     }
 }
 /*
@@ -31,13 +51,24 @@
 @media (orientation=landscape) and (min-width: 920px)
 {
     body  {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
     .logo div {
         font-size: 4vmax;
     }
     main {
+        margin-top: 1vmax;
+    }
+    .inputt {
+        width: 44vw;
+        font-size: 1.8vw;
         margin-top: 2vmax;
+    }
+    .inputt input {
+        margin-bottom: 1.2vw;
+    }
+    .logo {
+        margin-bottom: 2vmin;
     }
 }
 body {
@@ -57,7 +88,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5vmin;
 }
 .logo div {
     font-weight: 600;
@@ -70,15 +100,9 @@ main {
     justify-content: center;
     margin-bottom: 3vw;
 }
-.input-container {
-    display: flex;
-    align-items: center;
-    margin-top: 0.8vw;
-}
-.input-container input {
+.inn {
     all: unset;
-    border-bottom: #ccc solid 1px;
-    width: 18vw;
+    border-bottom: #ccc solid 0.5px;
     text-align: center;
 }
 .operation-container {
