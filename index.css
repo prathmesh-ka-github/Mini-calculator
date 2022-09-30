@@ -1,6 +1,3 @@
-
-
-
 /*
     ! CSS for Mobile browsers
 */
@@ -28,7 +25,6 @@
         margin-top: 50px;
     }
 }
-
 /*
     ! CSS for desktop browsers
 */
@@ -44,7 +40,6 @@
         margin-top: 2vmax;
     }
 }
-
 body {
     margin: 0;
     color: #ccc;
