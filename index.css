@@ -159,7 +159,7 @@ main {
     background-color: #2b2a2a;
     transition: 0.3s;
     color: #39ff14;
-    font-weight: 400;
+    font-weight: 200;
 }
 .operation-container div input:hover {
     background-color: #2fc814;
