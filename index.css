@@ -22,6 +22,18 @@
     .logo {
         margin-bottom: 7vw;
     }
+    .operation-container div input {
+        font-size: 5.4vw;
+    }
+    #sub {
+        font-size: 6.5vw;
+    }
+    #mul {
+        font-size: 4.3vw;
+    }
+    #mod {
+        font-size: 3.4vw;
+    }
 }
 @media (orientation=landscape) and (max-width: 500px)
 {
@@ -43,6 +55,18 @@
     }
     .logo {
         margin-bottom: 7vw;
+    }
+    .operation-container div input {
+        font-size: 5.4vw;
+    }
+    #sub {
+        font-size: 6.5vw;
+    }
+    #mul {
+        font-size: 4.3vw;
+    }
+    #mod {
+        font-size: 3.4vw;
     }
 }
 /*
@@ -69,6 +93,18 @@
     }
     .logo {
         margin-bottom: 2vmin;
+    }
+    .operation-container div input {
+        font-size: 1.5vmax;
+    }
+    #sub {
+        font-size: 1.8vmax;
+    }
+    #mul {
+        font-size: 1.2vmax;
+    }
+    #mod {
+        font-size: 1.1vmax;
     }
 }
 body {
@@ -121,10 +157,18 @@ main {
     margin-right: 1vmax;
     border: solid 1px black;
     background-color: #2b2a2a;
+    transition: 0.3s;
+    color: #39ff14;
+    font-weight: 100;
 }
 .operation-container div input:hover {
-    background-color: #525252;
+    background-color: #2fc814;
+    color: black;
 }
+.operation-container div input:active {
+    background-color:#127800 ;
+}
+
 .output-con {
     margin-top: 2vmax;
     display: flex;
