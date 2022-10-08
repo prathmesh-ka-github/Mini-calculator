@@ -15,24 +15,36 @@
     .inputt {
         width: 80vw;
         font-size: 5.5vw;
+        margin-bottom: 9vw;
     }
     .inputt input {
-        margin-bottom: 4vw;
+        width: 260px;
     }
     .logo {
-        margin-bottom: 7vw;
-    }
-    .operation-container div input {
-        font-size: 5.4vw;
+        margin-bottom: 10vw;
     }
     #sub {
-        font-size: 6.5vw;
+        font-size: 6.8vw;
     }
     #mul {
-        font-size: 4.3vw;
+        font-size: 4.9vw;
     }
-    #mod {
-        font-size: 3.4vw;
+    #div {
+        font-size: 8vw;
+    }
+    .operation-container {
+        display:inline-grid;
+        grid-template-columns:70px 70px 70px 70px ;
+        align-items: center;
+        grid-gap: 5px;
+    }
+    .operation-container input {
+        width: 70px;
+        height: 90px;
+        font-size: 5.9vw;
+    }
+    .clear {
+        font-size: 8vw;
     }
 }
 @media (orientation=landscape) and (max-width: 500px)
@@ -41,7 +53,7 @@
         font-size: 4.5vw;
     }
     .logo div {
-        font-size: 8vmax;
+        font-size: 8vw;
     }
     main {
         margin-top: 70px;
@@ -49,24 +61,36 @@
     .inputt {
         width: 80vw;
         font-size: 5.5vw;
+        margin-bottom: 9vw;
     }
     .inputt input {
-        margin-bottom: 4vw;
+        width: 260px;
     }
     .logo {
-        margin-bottom: 7vw;
-    }
-    .operation-container div input {
-        font-size: 5.4vw;
+        margin-bottom: 10vw;
     }
     #sub {
-        font-size: 6.5vw;
+        font-size: 6.8vw;
     }
     #mul {
-        font-size: 4.3vw;
+        font-size: 4.9vw;
     }
-    #mod {
-        font-size: 3.4vw;
+    #div {
+        font-size: 8vw;
+    }
+    .operation-container {
+        display:inline-grid;
+        grid-template-columns:70px 70px 70px 70px ;
+        align-items: center;
+        grid-gap: 5px;
+    }
+    .operation-container input {
+        width: 70px;
+        height: 90px;
+        font-size: 5.9vw;
+    }
+    .clear {
+        font-size: 8vw;
     }
 }
 /*
@@ -81,30 +105,45 @@
         font-size: 4vmax;
     }
     main {
-        margin-top: 1vmax;
+        margin-top: 3vmax;
     }
     .inputt {
-        width: 44vw;
+        width: 350px;
         font-size: 1.8vw;
         margin-top: 2vmax;
+        margin-bottom: 1.3vw;
     }
     .inputt input {
-        margin-bottom: 1.2vw;
+        width: 310px;
+        margin-bottom: 1vw;
     }
     .logo {
         margin-bottom: 2vmin;
     }
-    .operation-container div input {
-        font-size: 1.5vmax;
-    }
-    #sub {
+    .operation-container input {
         font-size: 1.8vmax;
     }
+    #sub {
+        font-size: 2.3vmax;
+    }
     #mul {
-        font-size: 1.2vmax;
+        font-size: 1.5vmax;
     }
     #mod {
         font-size: 1.1vmax;
+    }
+    .operation-container {
+        display:inline-grid;
+        grid-template-columns:80px 80px 80px 80px ;
+        align-items: center;
+        grid-gap: 10px;
+    }
+    .operation-container input {
+        width: 80px;
+        height: 100px;
+    }
+    .clear{
+        font-size: 1.4vw;
     }
 }
 body {
@@ -132,49 +171,65 @@ main {
 }
 .inputt {
     display: flex;
-    flex-direction: column;
+    width: 350px;
     justify-content: center;
-    margin-bottom: 3vw;
+
+}
+.clear{
+    background-color: #1c1c1c;
+    color: white;
+    margin-left: 10px;
+    border: solid 0.5px #ccc;
+    border-radius: 6px;
+}
+.clear:hover {
+    background-color: #2b2a2a;
+    
+}
+.clear:active{
+    background-color:#1c1c1c;
+    color: #e30000;
 }
 .inn {
     all: unset;
     border-bottom: #ccc solid 0.5px;
     text-align: center;
 }
-.operation-container {
+.container-wrapper{
     display: flex;
-    flex-direction: column;
-}
-.operation-container div {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0.3vw;
+    justify-content: center;
 }
-.operation-container div input {
-    width: 50px;
-    height: 50px;
-    margin-right: 1vmax;
+.equals {
+    background-color: #2fc814 !important; 
+    color: black;
+}
+.equals:hover {
+    background-color: #127800 !important;
+}
+.equals:active {
+    background-color: #39ff14 !important;
+}
+.operation-container input {
     border: solid 1px black;
     background-color: #2b2a2a;
     transition: 0.3s;
-    color: #39ff14;
     font-weight: 200;
 }
-.operation-container div input:hover {
+.operants {
+    color: #39ff14;
+}
+.numbers {
+    color: #ccc;
+}
+.operation-container input:hover {
     background-color: #2fc814;
     color: black;
 }
-.operation-container div input:active {
+.operation-container input:active {
     background-color:#127800 ;
 }
-
 .output-con {
     margin-top: 2vmax;
     display: flex;
-}
-#output {
-    border-bottom: #39ff14 solid 1px;
-    width: 19vw;
-    text-align: center;
 }
