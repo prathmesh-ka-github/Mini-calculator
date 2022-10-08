@@ -20,34 +20,26 @@
         </logo>
         <in>
             <div class="inputt">
-                    <input type="number" id="num1" placeholder="Enter number 1" class="inn">
-                    <input type="number" id="num2" placeholder="Enter number 2" class="inn">
+                    <input type="number" id="num1" class="inn">
             </div>
-            <operations>
-                <div>
-                    <h3>Operations</h3>
-                </div>
+            <operations class="container-wrapper">
                 <div class="operation-container">
-                    <div>
-                        <input type="button" id="add" onclick="addition()" value="+">
-                        <div>Addition</div>
-                    </div>
-                    <div>
-                        <input type="button" id="sub" onclick="subtraction()" value="-">
-                        <div>Subtraction</div>
-                    </div>
-                    <div>
-                        <input type="button" id="mul" onclick="multiplication()" value="x">
-                        <div>Multiplication</div>
-                    </div>
-                    <div>
-                        <input type="button" id="div" onclick="division()" value="÷">
-                        <div>Division</div>
-                    </div>
-                    <div>
-                        <input type="button" id="mod" onclick="modulas()" value="%">
-                        <div>Modulas</div>
-                    </div>
+                        <input type="button" value="1" class="numbers">
+                        <input type="button" value="2" class="numbers">
+                        <input type="button" value="3" class="numbers">
+                        <input type="button" id="add" onclick="addition()" value="+" class="operants">
+                        <input type="button" value="4" class="numbers">
+                        <input type="button" value="5" class="numbers">
+                        <input type="button" value="6" class="numbers">
+                        <input type="button" id="sub" onclick="subtraction()" value="-" class="operants">
+                        <input type="button" value="7" class="numbers">
+                        <input type="button" value="8" class="numbers">
+                        <input type="button" value="9" class="numbers">
+                        <input type="button" id="mul" onclick="multiplication()" value="x" class="operants">
+                        <input type="button" value="." class="numbers">
+                        <input type="button" value="0" class="numbers">
+                        <input type="button" value="<" class="numbers">
+                        <input type="button" id="div" onclick="division()" value="÷" class="operants">
                 </div>
             </operations>
             <output>

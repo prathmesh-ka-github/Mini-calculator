@@ -22,7 +22,7 @@
     .logo {
         margin-bottom: 7vw;
     }
-    .operation-container div input {
+    .operation-container input {
         font-size: 5.4vw;
     }
     #sub {
@@ -33,6 +33,15 @@
     }
     #mod {
         font-size: 3.4vw;
+    }
+    .operation-container {
+        display:inline-grid;
+        grid-template-columns:70px 70px 70px 70px ;
+        align-items: center;
+    }
+    .operation-container input {
+        width: 70px;
+        height: 70px;
     }
 }
 @media (orientation=landscape) and (max-width: 500px)
@@ -56,7 +65,7 @@
     .logo {
         margin-bottom: 7vw;
     }
-    .operation-container div input {
+    .operation-container input {
         font-size: 5.4vw;
     }
     #sub {
@@ -84,27 +93,37 @@
         margin-top: 1vmax;
     }
     .inputt {
-        width: 44vw;
+        width: 30vw;
         font-size: 1.8vw;
         margin-top: 2vmax;
     }
     .inputt input {
-        margin-bottom: 1.2vw;
+        margin-bottom: 1vw;
     }
     .logo {
         margin-bottom: 2vmin;
     }
-    .operation-container div input {
-        font-size: 1.5vmax;
-    }
-    #sub {
+    .operation-container input {
         font-size: 1.8vmax;
     }
+    #sub {
+        font-size: 2.3vmax;
+    }
     #mul {
-        font-size: 1.2vmax;
+        font-size: 1.5vmax;
     }
     #mod {
         font-size: 1.1vmax;
+    }
+    .operation-container {
+        display:inline-grid;
+        grid-template-columns:80px 80px 80px 80px ;
+        align-items: center;
+        grid-gap: 10px;
+    }
+    .operation-container input {
+        width: 80px;
+        height: 80px;
     }
 }
 body {
@@ -141,27 +160,24 @@ main {
     border-bottom: #ccc solid 0.5px;
     text-align: center;
 }
-.operation-container {
+.container-wrapper{
     display: flex;
-    flex-direction: column;
-}
-.operation-container div {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0.3vw;
+    justify-content: center;
 }
-.operation-container div input {
-    width: 50px;
-    height: 50px;
-    margin-right: 1vmax;
+.operation-container input {
     border: solid 1px black;
     background-color: #2b2a2a;
     transition: 0.3s;
-    color: #39ff14;
     font-weight: 200;
 }
-.operation-container div input:hover {
+.operants {
+    color: #39ff14;
+}
+.numbers {
+    color: #ccc;
+}
+.operation-container input:hover {
     background-color: #2fc814;
     color: black;
 }
