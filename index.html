@@ -20,34 +20,31 @@
         </logo>
         <in>
             <div class="inputt">
-                    <input type="number" id="num1" class="inn">
+                <input type="text" id="put" class="inn">
+                <button class="clear" onclick="clr()"><</button>
             </div>
             <operations class="container-wrapper">
                 <div class="operation-container">
-                        <input type="button" value="1" class="numbers">
-                        <input type="button" value="2" class="numbers">
-                        <input type="button" value="3" class="numbers">
-                        <input type="button" id="add" onclick="addition()" value="+" class="operants">
-                        <input type="button" value="4" class="numbers">
-                        <input type="button" value="5" class="numbers">
-                        <input type="button" value="6" class="numbers">
-                        <input type="button" id="sub" onclick="subtraction()" value="-" class="operants">
-                        <input type="button" value="7" class="numbers">
-                        <input type="button" value="8" class="numbers">
-                        <input type="button" value="9" class="numbers">
-                        <input type="button" id="mul" onclick="multiplication()" value="x" class="operants">
-                        <input type="button" value="." class="numbers">
-                        <input type="button" value="0" class="numbers">
-                        <input type="button" value="<" class="numbers">
-                        <input type="button" id="div" onclick="division()" value="÷" class="operants">
+                    <input type="button" value="1" onclick="put1('1')" class="numbers">
+                    <input type="button" value="2" onclick="put1('2')" class="numbers">
+                    <input type="button" value="3" onclick="put1('3')" class="numbers">
+                    <input type="button" id="add"  onclick="put1('+')"value="+" class="operants">
+                    
+                    <input type="button" value="4" onclick="put1('4')" class="numbers">
+                    <input type="button" value="5" onclick="put1('5')" class="numbers">
+                    <input type="button" value="6" onclick="put1('6')" class="numbers">
+                    <input type="button" id="sub"  onclick="put1('-')"value="-" class="operants">
+                    <input type="button" value="7" onclick="put1('7')" class="numbers">
+                    <input type="button" value="8" onclick="put1('8')" class="numbers">
+                    <input type="button" value="9" onclick="put1('9')" class="numbers">
+                    <input type="button" id="mul"  onclick="put1('*')"value="x" class="operants">
+                    <input type="button" value="." onclick="put1('.')" class="numbers">
+                    <input type="button" value="0" onclick="put1('0')" class="numbers">
+                    <input type="button" id="div"  onclick="put1('/')"value="÷" class="operants">
+                    <input type="button" value="=" onclick="solve()" class="equals">
+                    
                 </div>
             </operations>
-            <output>
-                <div class="output-con">
-                    <div>The answer is -&nbsp;</div>
-                    <div id="output"></div>
-                </div>
-            </output>
         </in>
     </main>
 </body>

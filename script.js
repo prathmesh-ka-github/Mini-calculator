@@ -1,33 +1,19 @@
-var number1, number2, result;
-
-function addition () {
-    let t1=document.getElementById("num1").value;
-    let t2=document.getElementById("num2").value;
-    result = Number(t1) + Number(t2);
-    document.getElementById("output").innerHTML=result;
+var n1, n2;
+let val;
+function put1(val){
+    document.getElementById("put").value+=val;
+    console.log(document.getElementById("put").value);
+    document.getElementById("put").style.color="white";
 }
-
-function subtraction () {
-    let t1=document.getElementById("num1").value;
-    let t2=document.getElementById("num2").value;
-    result = Number(t1) - Number(t2);
-    document.getElementById("output").innerHTML=result;
+function clr(){
+    document.getElementById("put").value='';
+    document.getElementById("put").style.color="white";
 }
-function multiplication () {
-    let t1=document.getElementById("num1").value;
-    let t2=document.getElementById("num2").value;
-    result = Number(t1) * Number(t2);
-    document.getElementById("output").innerHTML=result;
-}
-function division () {
-    let t1=document.getElementById("num1").value;
-    let t2=document.getElementById("num2").value;
-    result = Number(t1) / Number(t2);
-    document.getElementById("output").innerHTML=result;
-}
-function modulas () {
-    let t1=document.getElementById("num1").value;
-    let t2=document.getElementById("num2").value;
-    result = Number(t1) % Number(t2);
-    document.getElementById("output").innerHTML=result;
+function solve(){
+    let x = document.getElementById("put").value;
+    let y = eval(x);
+    document.getElementById("put").value=y;
+    document.getElementById("put").style.color="#39ff14";
+    console.log("solving...")
+    console.log(">> " + y)
 }

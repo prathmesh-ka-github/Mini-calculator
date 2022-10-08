@@ -15,33 +15,36 @@
     .inputt {
         width: 80vw;
         font-size: 5.5vw;
+        margin-bottom: 9vw;
     }
     .inputt input {
-        margin-bottom: 4vw;
+        width: 260px;
     }
     .logo {
-        margin-bottom: 7vw;
-    }
-    .operation-container input {
-        font-size: 5.4vw;
+        margin-bottom: 10vw;
     }
     #sub {
-        font-size: 6.5vw;
+        font-size: 6.8vw;
     }
     #mul {
-        font-size: 4.3vw;
+        font-size: 4.9vw;
     }
-    #mod {
-        font-size: 3.4vw;
+    #div {
+        font-size: 8vw;
     }
     .operation-container {
         display:inline-grid;
         grid-template-columns:70px 70px 70px 70px ;
         align-items: center;
+        grid-gap: 5px;
     }
     .operation-container input {
         width: 70px;
-        height: 70px;
+        height: 90px;
+        font-size: 5.9vw;
+    }
+    .clear {
+        font-size: 8vw;
     }
 }
 @media (orientation=landscape) and (max-width: 500px)
@@ -50,7 +53,7 @@
         font-size: 4.5vw;
     }
     .logo div {
-        font-size: 8vmax;
+        font-size: 8vw;
     }
     main {
         margin-top: 70px;
@@ -58,24 +61,36 @@
     .inputt {
         width: 80vw;
         font-size: 5.5vw;
+        margin-bottom: 9vw;
     }
     .inputt input {
-        margin-bottom: 4vw;
+        width: 260px;
     }
     .logo {
-        margin-bottom: 7vw;
-    }
-    .operation-container input {
-        font-size: 5.4vw;
+        margin-bottom: 10vw;
     }
     #sub {
-        font-size: 6.5vw;
+        font-size: 6.8vw;
     }
     #mul {
-        font-size: 4.3vw;
+        font-size: 4.9vw;
     }
-    #mod {
-        font-size: 3.4vw;
+    #div {
+        font-size: 8vw;
+    }
+    .operation-container {
+        display:inline-grid;
+        grid-template-columns:70px 70px 70px 70px ;
+        align-items: center;
+        grid-gap: 5px;
+    }
+    .operation-container input {
+        width: 70px;
+        height: 90px;
+        font-size: 5.9vw;
+    }
+    .clear {
+        font-size: 8vw;
     }
 }
 /*
@@ -90,14 +105,16 @@
         font-size: 4vmax;
     }
     main {
-        margin-top: 1vmax;
+        margin-top: 3vmax;
     }
     .inputt {
-        width: 30vw;
+        width: 350px;
         font-size: 1.8vw;
         margin-top: 2vmax;
+        margin-bottom: 1.3vw;
     }
     .inputt input {
+        width: 310px;
         margin-bottom: 1vw;
     }
     .logo {
@@ -123,7 +140,10 @@
     }
     .operation-container input {
         width: 80px;
-        height: 80px;
+        height: 100px;
+    }
+    .clear{
+        font-size: 1.4vw;
     }
 }
 body {
@@ -151,9 +171,24 @@ main {
 }
 .inputt {
     display: flex;
-    flex-direction: column;
+    width: 350px;
     justify-content: center;
-    margin-bottom: 3vw;
+
+}
+.clear{
+    background-color: #1c1c1c;
+    color: white;
+    margin-left: 10px;
+    border: solid 0.5px #ccc;
+    border-radius: 6px;
+}
+.clear:hover {
+    background-color: #2b2a2a;
+    
+}
+.clear:active{
+    background-color:#1c1c1c;
+    color: #e30000;
 }
 .inn {
     all: unset;
@@ -164,6 +199,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.equals {
+    background-color: #2fc814 !important; 
+    color: black;
+}
+.equals:hover {
+    background-color: #127800 !important;
+}
+.equals:active {
+    background-color: #39ff14 !important;
 }
 .operation-container input {
     border: solid 1px black;
@@ -181,16 +226,10 @@ main {
     background-color: #2fc814;
     color: black;
 }
-.operation-container div input:active {
+.operation-container input:active {
     background-color:#127800 ;
 }
-
 .output-con {
     margin-top: 2vmax;
     display: flex;
-}
-#output {
-    border-bottom: #39ff14 solid 1px;
-    width: 19vw;
-    text-align: center;
 }
