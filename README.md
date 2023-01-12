@@ -2,4 +2,4 @@
 
 link = https://gilded-duckanoo-919e6f.netlify.app
 
-Made with vanilla HTML
+Made with vanilla HTML, CSS and JS
